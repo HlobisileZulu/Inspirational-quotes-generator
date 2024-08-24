@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Inspirational Quote Generator</title>
   </head>
@@ -13,20 +14,24 @@
         <h1>Inspirational Quote Generator</h1>
       </header>
       <main>
-        <form id="quote-generator">
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter feeling..."
-            autocomplete="off"
-            autofocus
-            required
-            class="prompt"
-          />
-          <input type="submit" value="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="How are you feeling?"
+              autocomplete="off"
+              autofocus
+              required
+              class="prompt"
+              id="user-prompt"
+            />
+            <input type="submit" value="submit" class="submit-button" />
+          </form>
+          <div class="example">i.e: Happy😊, Sad😞 or Angry😠..</div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
       <footer>
         This was coded by
