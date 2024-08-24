@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Inspirational Quote Generator</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>Inspirational Quote Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="quote-generator">
           <input
             type="text"
             name=""
@@ -25,10 +26,10 @@
           />
           <input type="submit" value="submit" class="submit-button" />
         </form>
-        <div class="quote">Quote will go here...</div>
+        <div class="quote" id="quote"></div>
       </main>
       <footer>
-        This AI project was coded by
+        This was coded by
         <a href="https://github.com/HlobisileZulu" target="_blank"
           >Hlobisile Zulu</a
         >, is open-sourced on
